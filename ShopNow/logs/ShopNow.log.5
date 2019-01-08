@@ -1,0 +1,136 @@
+2019-01-05 19:11:12,499 ERROR: Exception on /auth/logout [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 29, in logOut
+    return(redirect(url_for('index')))
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2019-01-05 19:11:19,771 ERROR: Exception on /auth/login [POST] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 21, in logIn
+    nextPage = url_for('index')
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2019-01-05 19:11:21,529 ERROR: Exception on /auth/logout [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 29, in logOut
+    return(redirect(url_for('index')))
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2019-01-05 19:11:29,063 ERROR: Exception on /auth/login [POST] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 16, in logIn
+    return(redirect(url_for('logIn')))
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'logIn'. Did you mean 'auth.logIn' instead?
+2019-01-05 19:13:34,109 ERROR: Exception on /auth/login [POST] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 16, in logIn
+    return(redirect(url_for('auth.logIn')))
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'logIn'. Did you mean 'auth.logIn' instead?
+2019-01-05 19:13:39,477 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:50]

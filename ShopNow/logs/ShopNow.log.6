@@ -1,0 +1,121 @@
+2019-01-05 18:48:30,875 ERROR: Exception on /auth/logi [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
+    return handler(e)
+  File "C:\Users\Rohit\DEV\ShopNow\app\errors\handlers.py", line 7, in not_found_error
+    return(render_template('404.html')), 404
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Rohit\DEV\ShopNow\app\errors\templates\404.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Rohit\DEV\ShopNow\app\templates\base.html", line 41, in top-level template code
+    {% block content %}
+  File "C:\Users\Rohit\DEV\ShopNow\app\errors\templates\404.html", line 5, in block "content"
+    <a href={{url_for('index')}}>Back</a>
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2019-01-05 18:49:48,942 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 19:10:01,672 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:50]
+2019-01-05 19:10:26,096 ERROR: Exception on /index [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 259, in decorated_view
+    elif not current_user.is_authenticated:
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 335, in _get_user
+    current_app.login_manager._load_user()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\login_manager.py", line 359, in _load_user
+    return self.reload_user()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\login_manager.py", line 321, in reload_user
+    user = self.user_callback(user_id)
+  File "C:\Users\Rohit\DEV\ShopNow\app\models\models.py", line 32, in load_user
+    return(User.query.get(userID=int(id)))
+TypeError: get() got an unexpected keyword argument 'userID'
+2019-01-05 19:10:59,411 ERROR: Exception on /index [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 259, in decorated_view
+    elif not current_user.is_authenticated:
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\utils.py", line 335, in _get_user
+    current_app.login_manager._load_user()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\login_manager.py", line 359, in _load_user
+    return self.reload_user()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask_login\login_manager.py", line 321, in reload_user
+    user = self.user_callback(user_id)
+  File "C:\Users\Rohit\DEV\ShopNow\app\models\models.py", line 32, in load_user
+    return(User.query.get(int(id)))
+TypeError: get() got an unexpected keyword argument 'userID'
+2019-01-05 19:11:07,692 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:50]

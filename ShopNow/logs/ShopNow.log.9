@@ -1,0 +1,92 @@
+2019-01-05 17:15:27,405 ERROR: Exception on /login [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 24, in logIn
+    return render_template('login.html', title='Log In', form=form)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\templates\login.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Rohit\DEV\ShopNow\app\templates\base.html", line 17, in top-level template code
+    <a href={{url_for('logIn')}}>Log In</a>
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'logIn'. Did you mean 'auth.logIn' instead?
+2019-01-05 17:16:39,838 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 17:18:11,435 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 17:25:36,192 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 17:26:12,307 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 17:27:07,436 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]
+2019-01-05 17:27:15,360 ERROR: Exception on /login [GET] [in c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\routes.py", line 24, in logIn
+    return render_template('login.html', title='Log In', form=form)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Rohit\DEV\ShopNow\app\auth\templates\login.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Rohit\DEV\ShopNow\app\templates\base.html", line 15, in top-level template code
+    <a href={{url_for('index')}}>Home</a>
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "c:\users\rohit\envs\shopnow\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2019-01-05 17:27:56,707 INFO: ShopNow Startup [in C:\Users\Rohit\DEV\ShopNow\app\__init__.py:25]

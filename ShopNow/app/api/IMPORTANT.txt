@@ -1,0 +1,21 @@
+JSON object for USER
+
+{
+    "userID":NUM,
+    "username":STRING,
+    "emailID":STRING,
+    "passwordHash":STRING,
+    "lastSeen":DATETIME,
+    "authorized":BOOLEAN,
+    "_links":{
+        "self":"/api/users/userID"
+    }
+}
+
+
+JSON object for error
+
+{
+    "error": STRING,
+    "message": STRING
+}
