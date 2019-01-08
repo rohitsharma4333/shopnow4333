@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if title %}
+            {{title}}
+        {% else %}
+            Title
+        {% endif %}
+    </title>
+</head>
+<body>
+    <div style="border:1px solid black;">
+        <a href={{url_for('main.index')}}>Home</a>
+        {% if current_user.is_anonymous %}
+            <a href={{url_for('auth.logIn')}}>Log In</a>
+            <a href={{url_for('users.signUp')}}>Sign Up</a>
+        {% else %}
+            <a href={{url_for('auth.logOut')}}>Log Out</a>
+            <a href={{url_for('users.updatePassword')}}>Change Password</a>
+        {% endif %}
+    </div>
+    <div style="border:1px solid black;">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>
+                    {{message}}
+                </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
